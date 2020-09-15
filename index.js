@@ -30,4 +30,10 @@ function init() {
   });
   const box = new THREE.Mesh(geometry, material);
   scene.add(box);
+
+  // ライトを作成
+  const directionalLight = new THREE.DirectionalLight(
+    0xffffff
+  );
+  directionalLight.position.set(1, 1, 1);
 }
