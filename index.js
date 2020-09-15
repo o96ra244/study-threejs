@@ -36,4 +36,7 @@ function init() {
     0xffffff
   );
   directionalLight.position.set(1, 1, 1);
+
+  // シーンに追加
+  scene.add(directionalLight);
 }
