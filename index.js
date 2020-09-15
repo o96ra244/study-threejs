@@ -39,4 +39,7 @@ function init() {
 
   // シーンに追加
   scene.add(directionalLight);
+
+  // 初回実行
+  renderer.render(scene, camera);
 }
