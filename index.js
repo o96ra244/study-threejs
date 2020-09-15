@@ -22,4 +22,12 @@ function init() {
     10000
   );
   camera.position.set(0, 0, +1000);
+
+  // 立方体を作成
+  const geometry = new THREE.BoxGeometry(500, 500, 500);
+  const material = new THREE.MeshStandardMaterial({
+    color: 0x0000ff
+  });
+  const box = new THREE.Mesh(geometry, material);
+  scene.add(box);
 }
