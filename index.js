@@ -10,4 +10,7 @@ function init() {
   });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(width, height);
+
+  // シーンを作成
+  const scene = new THREE.Scene();
 }
